@@ -2,6 +2,8 @@
 
 This mod enhances some features for the collapsed toolbar mode.
 
+![Better Collapsed Toolbar Mode Thumbnail](bctm.png)
+
 - Rounds corners of title bar buttons, but still keeps the max corner hitbox
 - Shows audio button even when the tab isnt selected
 - Moves settings button to the empty spot in the top left corner
