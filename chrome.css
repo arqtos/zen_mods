@@ -1,0 +1,100 @@
+@-moz-document url-prefix("chrome:") {
+  
+  /* Rounded Window Buttons */
+  
+  @media (-moz-bool-pref: "mod.bctm.round_corners") {
+    .titlebar-button {
+      padding: 0 15px !important;
+    }
+    
+    .titlebar-button:hover {
+      background-color: rgba(100,100,100,0.4) !important;
+    }
+    
+    .titlebar-min {
+      border-radius: 5px !important;
+    }
+    
+    .titlebar-max,
+    .titlebar-restore {
+      margin-left: 5px !important;
+      margin-right: 5px !important;
+      border-radius: 5px !important;
+    }
+    
+    .titlebar-close {
+      border-radius: 5px 0px 5px 5px !important;
+    }
+    
+    .titlebar-close:hover {
+      background-color: rgba(200,0,0,1) !important;
+    }
+  }
+  
+  /* Improve Audio Buttons */
+  
+  @media (-moz-bool-pref: "mod.bctm.enable_enhanced_audio_buttons") {
+    #navigator-toolbox:not([zen-sidebar-expanded])
+      #tabbrowser-tabs
+      .tab-icon-overlay:is([soundplaying], [muted], [activemedia-blocked]):not(
+        [selected]
+      ) {
+      display: block !important;
+      filter: drop-shadow(0px 0px 2px #000000AA) opacity(.7);
+    }
+    
+    .tab-icon-overlay {
+      transform: translate(30%, -30%) !important;
+      background-color: rgb(70,70,70) !important;
+      filter: drop-shadow(0px 0px 2px #000000AA);
+    }
+    
+    .tab-icon-overlay:hover { 
+      background-color: rgb(85,85,85) !important;
+    }
+  }
+  
+  /* Move Settingsbutton */
+  
+  @media (-moz-bool-pref: "mod.bctm.move_settings_button") {
+    #PanelUI-menu-button {
+      position: absolute !important;
+      top: 3px !important;
+      left: 4px !important;
+    }
+
+    .titlebar-buttonbox {
+      margin-left: 2em !important;
+    }
+  }
+  
+  /* Remove Right and Bottom Margin */
+  
+  @media (-moz-bool-pref: "mod.bctm.remove_right_and_bottom_margin") {
+    #zen-tabbox-wrapper {
+      margin-right: 0px !important;
+      margin-bottom: 0px !important;
+    }
+  }
+  
+  /* Hide Space Button */
+  
+  @media (-moz-bool-pref: "mod.bctm.hide_space_button") {
+    .zen-current-workspace-indicator {
+      display: none !important;
+    }
+    
+    .zen-workspace-pinned-tabs-section {
+      margin-top: 1em !important;
+    }
+  }
+
+  /* Correctly Display Tab Close Button */
+  
+  @media (-moz-bool-pref: "mod.bctm.fix_tab_close_button") {
+    .tab-close-button {
+      transform: translateY(1px) !important;
+    }
+  }
+
+}

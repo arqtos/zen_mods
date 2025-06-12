@@ -1,0 +1,38 @@
+[
+  {
+    "property": "mod.bctm.round_corners",
+    "label": "Round the corners of title bar buttons",
+    "type": "checkbox",
+    "defaultValue": "true"
+  },
+  {
+    "property": "mod.bctm.enable_enhanced_audio_buttons",
+    "label": "Enable the enhanced audio buttons",
+    "type": "checkbox",
+    "defaultValue": "true"
+  },
+  {
+    "property": "mod.bctm.move_settings_button",
+    "label": "Move the settings button to the top left corner",
+    "type": "checkbox",
+    "defaultValue": "true"
+  },
+  {
+    "property": "mod.bctm.remove_right_and_bottom_margin",
+    "label": "Remove the right and bottom margin of the browser window",
+    "type": "checkbox",
+    "defaultValue": "true"
+  },
+  {
+    "property": "mod.bctm.hide_space_button",
+    "label": "Hide the space button from the vertical toolbar",
+    "type": "checkbox",
+    "defaultValue": "true"
+  },
+  {
+    "property": "mod.bctm.fix_tab_close_button",
+    "label": "Fix the tab close button display",
+    "type": "checkbox",
+    "defaultValue": "true"
+  }
+]
